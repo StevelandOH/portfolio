@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body,
@@ -16,4 +17,10 @@ body {
         no-repeat center;
     background-size: cover;
     overflow: scroll;
+}
+
+.home {
+    font-size: 80pt;
+    color: white;
+    margin-top: 500px;
 }

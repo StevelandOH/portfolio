@@ -1,7 +1,15 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Projects() {
-    return <h1>Projects</h1>;
+    return (
+        <>
+            <h1 className="home">UNDER CONSTRUCTION...</h1>
+            <NavLink className="home" to="/">
+                {'< Go Back To Homepage'}
+            </NavLink>
+        </>
+    );
 }
 
 export default Projects;

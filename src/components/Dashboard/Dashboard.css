@@ -8,7 +8,7 @@
     border-radius: 5em;
     margin-top: 20px;
     border: 5px solid black;
-    color: white;
+    color: black;
     box-shadow: 15px 3px rgba(189, 54, 54, 0.822);
 }
 
@@ -82,7 +82,7 @@
 
 .phone-top img.my-picture {
     margin: 10px;
-    height: 180px;
+    height: 160px;
     border-radius: 10em;
 }
 
@@ -102,15 +102,24 @@
 }
 
 .dash-name {
-    margin-bottom: 10px;
-    font-size: 20pt;
+    margin-bottom: 15px;
+    font-size: 31pt;
     font-weight: lighter;
-    color: rgb(245, 245, 245);
+    color: rgb(63, 63, 63);
 }
 
 /* ------------------------------------------------------------------ */
 
 /* MIDDDLE */
+
+.phone-screen {
+    margin: 0 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 975px;
+    background-color: rgb(233, 233, 233);
+}
 
 .power-button {
     position: static;
@@ -121,19 +130,9 @@
     border-radius: 5em;
 }
 
-.phone-screen {
-    margin: 0 5px 0 5px;
-    display: flex;
-    flex-direction: column;
-    border: none;
-    height: 930px;
-    background-color: rgb(233, 233, 233);
-}
-
 .text-box {
     display: flex;
     flex-direction: row;
-    margin: 10px;
 }
 
 li {
@@ -151,9 +150,11 @@ li {
 .inner-text.left {
     color: rgb(109, 109, 109);
     background-color: rgb(185, 185, 185);
+    margin: 10px 0 10px 25px;
 }
 
 .inner-text.right {
+    margin: 10px 25px 10px 0;
     color: white;
     background-color: rgb(47, 127, 255);
 }
@@ -161,11 +162,95 @@ li {
 /* ------------------------------------------------------------------ */
 
 /* BOTTOM */
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    height: 80px;
+}
+
+.email {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    height: 75px;
+    border-radius: 5em;
+    border: 1px solid rgba(174, 174, 174, 0.706);
+    font-size: 16pt;
+}
+
+.message {
+    font-size: 16pt;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    height: 75px;
+    border-radius: 5em;
+    border: 1px solid rgba(174, 174, 174, 0.706);
+}
+
+.email-submit {
+    position: absolute;
+    margin: 0 0 0 660px;
+    border-radius: 5em;
+    height: 60px;
+    width: 60px;
+    color: white;
+    background-color: rgb(17, 192, 17);
+    font-size: 24pt;
+    border: none;
+}
 
 .phone-bottom {
-    margin-left: 10px;
-    width: 735px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
     border-radius: 0 0 5em 5em;
-    height: 175px;
+    height: 150px;
     background-image: url('/Users/stephen/Desktop/portfolio/src/data/TopPhoneBG.png');
+}
+
+.phone-bottom a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25pt;
+    margin: 10px;
+    border-radius: 5em;
+    height: 100px;
+    width: 135px;
+}
+
+.p-button {
+    background-color: rgb(236, 236, 236);
+    color: rgb(179, 52, 52);
+    text-decoration: none;
+}
+
+.r-button {
+    background-color: rgb(78, 148, 204);
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+}
+
+.x-button,
+.y-button {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-line {
+    position: absolute;
+    margin: 1360px 0 0 270px;
+    height: 10px;
+    width: 200px;
+    background-color: black;
+    border-radius: 5em;
 }

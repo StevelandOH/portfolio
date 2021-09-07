@@ -1,12 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Resume.css';
 
 function Resume() {
     return (
         <>
-            <div className="resume-container">
-                <div className="resume"></div>
-            </div>
+            <h1 className="home">UNDER CONSTRUCTION...</h1>
+            <NavLink className="home" to="/">
+                Dash
+            </NavLink>
         </>
     );
 }
