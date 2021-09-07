@@ -5,7 +5,10 @@
     border-radius: 5em;
     margin-top: 20px;
     border: 7px solid black;
+    color: white;
 }
+
+/* TOP section of the "phone" on the dashboard */
 
 .dash-top {
     display: flex;
@@ -13,6 +16,56 @@
     align-items: center;
     height: 300px;
     border-radius: 5em 5em 0 0;
+    background-color: rgba(155, 155, 155, 0.3);
+}
+
+.dash-top img {
+    margin: 10px;
+    height: 200px;
+    border-radius: 10em;
+}
+
+/* MID section of the phone on the dashboard */
+
+.dash-mid {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 1290px;
+    background-color: black;
+    border-radius: 5em;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+li {
+    list-style-type: none;
+    margin: 3px;
+    font-size: 20pt;
+}
+
+.inner-text {
+    border-radius: 2em;
+    width: 365px;
+    padding: 20px;
+}
+
+.inner-text.left {
+    background-color: rgba(155, 155, 155, 0.3);
+}
+
+.inner-text.right {
+    background-color: rgb(47, 127, 255);
+}
+/* BOTTOM section of the phone on the dashboard */
+
+.dash-bottom {
+    border-radius: 0 0 5em 5em;
+    height: 200px;
     background-color: rgba(155, 155, 155, 0.3);
 }
 
