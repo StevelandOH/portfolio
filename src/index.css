@@ -5,9 +5,9 @@
 
 body,
 html {
-    height: 100%;
+    height: auto;
     width: 100vw;
-    padding: 10px;
+    overflow: visible;
     display: flex;
     justify-content: center;
 }
@@ -16,11 +16,11 @@ body {
     background: url('https://cdn.wallpapersafari.com/99/27/Tl6MzR.jpg')
         no-repeat center;
     background-size: cover;
-    overflow: scroll;
+    padding: 10px;
 }
 
 .home {
-    font-size: 80pt;
+    font-size: 50pt;
     color: white;
-    margin-top: 500px;
+    margin-top: 200px;
 }

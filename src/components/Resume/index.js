@@ -5,9 +5,9 @@ import './Resume.css';
 function Resume() {
     return (
         <>
-            <h1 className="home">UNDER CONSTRUCTION...</h1>
+            <h1 className="home">{':( Sorry... underconstruction...'}</h1>
             <NavLink className="home" to="/">
-                Dash
+                {'< Go Back To Homepage'}
             </NavLink>
         </>
     );

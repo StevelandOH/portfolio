@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import './Dashboard.css';
 import me from './../../data/DashboardImage.png';
 import mesh from './../../data/ReceiverMesh.png';
+import blurry from './../../data/TopPhoneBG.png';
 
 function Dashboard() {
     const [email, setEmail] = useState('');
@@ -63,45 +64,34 @@ function Dashboard() {
                         <div className="text-box">
                             {/* row ONE of 'text' */}
                             <div className="inner-text "></div>
-                            <div className="inner-text right">
-                                <li>Full Stack Software Engineer</li>
-                                <li>Full Stack Software Engineer</li>
+                            <div className="inner-text right one">
+                                <p>Full Stack Software Engineer</p>
                             </div>
                         </div>
                         <div className="text-box">
                             {/* row TWO of 'text'  */}
-                            <div className="inner-text left">
-                                <li>Full Stack Software Engineer</li>
-                                <li>Full Stack Software Engineer</li>
-                                <li>Full Stack Software Engineer</li>
+                            <div className="inner-text left two">
+                                <p>
+                                    JavaScript | Python | React | React-Native |
+                                    CSS | HTML | AWS | Redux | Flask | Node.js |
+                                    Express| GraphQL | CSS | RESTful API |
+                                    Unit-Testing | End-to-end Testing
+                                </p>
                             </div>
                             <div className="inner-text "></div>
                         </div>
                         <div className="text-box">
                             {/* row THREE of 'text'  */}
                             <div className="inner-text "></div>
-                            <div className="inner-text right">
-                                <li>Full Stack Software Engineer</li>
+                            <div className="inner-text right three">
+                                <p>Cleveland, Ohio</p>
                             </div>
                         </div>
-                        <div className="text-box">
-                            {/* row FOUR of 'text'  */}
-                            <div className="inner-text left">
-                                <li>Full Stack Software Engineer</li>
-                            </div>
-                            <div className="inner-text "></div>
-                        </div>
-                        <div className="text-box">
-                            {/* row FOUR of 'text'  */}
-                            <div className="inner-text "></div>
-                            <div className="inner-text right">
-                                <li>Full Stack Software Engineer</li>
-                            </div>
-                        </div>
+
                         <form className="contact-box" onSubmit={sendEmail}>
                             <input
                                 className="email"
-                                placeholder="Email Address"
+                                placeholder="your email..."
                                 type="email"
                                 name="user_email"
                                 value={email}
@@ -110,7 +100,7 @@ function Dashboard() {
                             <input
                                 type="text"
                                 className="message"
-                                placeholder="Message"
+                                placeholder="the message..."
                                 name="message"
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
@@ -120,35 +110,43 @@ function Dashboard() {
                                 value="Send"
                                 className="email-submit"
                             >
-                                ⬆
+                                S
                             </button>
                         </form>
                     </div>
                     <div className="phone-bottom">
-                        <NavLink
-                            className="p-button"
-                            to="/stephensawesomeprojects"
-                        >
-                            MyWork
-                        </NavLink>
-                        <NavLink
-                            className="r-button"
-                            to="/stephensawesomeresume"
-                        >
-                            Resume
-                        </NavLink>
-                        <NavLink
-                            className="x-button"
-                            to="/stephensawesomeresume"
-                        >
-                            ...
-                        </NavLink>
-                        <NavLink
-                            className="y-button"
-                            to="/stephensawesomeresume"
-                        >
-                            ...
-                        </NavLink>
+                        <div className="big-bottom">
+                            <NavLink
+                                className="p-button"
+                                to="/stephensawesomeprojects"
+                            >
+                                P
+                            </NavLink>
+                            <NavLink
+                                className="r-button"
+                                to="/stephensawesomeresume"
+                            >
+                                R
+                            </NavLink>
+                            <NavLink
+                                className="x-button"
+                                to="/stephensawesomeresume"
+                            >
+                                -
+                            </NavLink>
+                            <NavLink
+                                className="y-button"
+                                to="/stephensawesomeresume"
+                            >
+                                -
+                            </NavLink>
+                        </div>
+                        <div className="big-bottom">
+                            <div className="bottom p">projects</div>
+                            <div className="bottom r">resume</div>
+                            <div className="bottom x">tbd</div>
+                            <div className="bottom y">tbd</div>
+                        </div>
                     </div>
                     <div className="bottom-line"></div>
                 </div>

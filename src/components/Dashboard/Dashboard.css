@@ -29,8 +29,7 @@
     height: 270px;
     border-radius: 5em 5em 0 0;
     border: none;
-    background-color: rgb(231, 231, 231);
-    /* background-image: url('/Users/stephen/Desktop/portfolio/src/data/TopPhoneBG.png'); */
+    background-image: url('https://i.postimg.cc/4xD8dXX8/Top-Phone-BG.png');
 }
 
 .top-banner,
@@ -80,16 +79,14 @@
 }
 
 .phone-top img.my-picture {
-    margin: 10px;
     height: 160px;
     border-radius: 10em;
 }
 
 .arrow-image-container {
-    margin-right: 25px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 650px;
 }
@@ -101,10 +98,8 @@
 }
 
 .dash-name {
-    margin-bottom: 15px;
-    font-size: 31pt;
-    font-weight: lighter;
-    color: rgb(63, 63, 63);
+    font-size: 36pt;
+    color: rgb(41, 41, 41);
 }
 
 /* ------------------------------------------------------------------ */
@@ -116,7 +111,7 @@
     display: flex;
     flex-direction: column;
     border: none;
-    height: 975px;
+    height: 950px;
     background-color: rgb(233, 233, 233);
 }
 
@@ -134,10 +129,10 @@
     flex-direction: row;
 }
 
-li {
+p {
     list-style-type: none;
     margin: 3px;
-    font-size: 20pt;
+    font-size: 16pt;
 }
 
 .inner-text {
@@ -147,7 +142,7 @@ li {
 }
 
 .inner-text.left {
-    color: rgb(109, 109, 109);
+    color: rgb(53, 53, 53);
     background-color: rgb(185, 185, 185);
     margin: 10px 0 10px 25px;
 }
@@ -158,6 +153,15 @@ li {
     background-color: rgb(47, 127, 255);
 }
 
+.inner-text.left.two {
+    width: 1200px;
+}
+
+.inner-text.right.three {
+    width: 230px;
+    margin: 10px 0 470px 100px;
+}
+
 /* ------------------------------------------------------------------ */
 
 /* BOTTOM */
@@ -166,84 +170,118 @@ li {
     justify-content: space-between;
     align-items: center;
     margin-top: 35px;
-    height: 80px;
 }
 
 .email {
     margin: 5px;
-    padding: 10px;
-    text-align: center;
+    padding: 20px 0 20px 30px;
     width: 200px;
-    height: 75px;
     border-radius: 5em;
     border: 1px solid rgba(174, 174, 174, 0.706);
-    font-size: 16pt;
+    font-size: 12pt;
+}
+
+.email::placeholder,
+.message::placeholder {
+    font-style: italic;
 }
 
 .message {
-    font-size: 16pt;
+    font-size: 12pt;
     margin: 5px;
-    padding: 10px;
-    text-align: center;
+    padding: 20px 0 20px 30px;
     align-items: center;
     width: 500px;
-    height: 75px;
     border-radius: 5em;
     border: 1px solid rgba(174, 174, 174, 0.706);
 }
 
 .email-submit {
     position: absolute;
-    margin: 0 0 0 660px;
+    margin: 0 0 0 670px;
     border-radius: 5em;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     color: white;
     background-color: rgb(17, 192, 17);
     font-size: 24pt;
     border: none;
 }
 
+.big-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
 .phone-bottom {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 0 0 5em 5em;
-    height: 150px;
-    background-color: rgb(231, 231, 231);
-    /* background-image: url('/Users/stephen/Desktop/portfolio/src/data/TopPhoneBG.png'); */
+    height: 200px;
+    background-image: url('https://i.postimg.cc/4xD8dXX8/Top-Phone-BG.png');
 }
 
 .phone-bottom a {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 25pt;
-    margin: 10px;
-    border-radius: 5em;
-    height: 100px;
+    margin: 25px 10px 0 10px;
+    font-size: 50pt;
+    border-radius: 5em 5em 0 0;
+    height: 60px;
     width: 135px;
 }
 
 .p-button {
-    background-color: rgb(236, 236, 236);
-    color: rgb(179, 52, 52);
+    background-color: rgb(184, 231, 173);
+    color: rgb(66, 66, 66);
     text-decoration: none;
+    padding-top: 10px;
+}
+
+.bottom.p {
+    color: rgb(66, 66, 66);
+    background-color: rgb(184, 231, 173);
 }
 
 .r-button {
+    padding-top: 10px;
     background-color: rgb(78, 148, 204);
     color: rgb(238, 238, 238);
     text-decoration: none;
 }
 
+.bottom.r {
+    color: rgb(238, 238, 238);
+    background-color: rgb(78, 148, 204);
+}
+
 .x-button,
 .y-button {
+    padding-top: 10px;
     background-color: black;
     color: white;
     text-decoration: none;
+}
+
+.bottom.x,
+.bottom.y {
+    text-align: center;
+    color: white;
+
+    background-color: rgb(2, 2, 2);
+}
+
+.bottom {
+    margin: 0 10px 0 10px;
+    font-size: 14pt;
+    padding-top: 15px;
+    border-radius: 0 0 5em 5em;
+    text-align: center;
+    height: 60px;
+    width: 135px;
 }
 
 .bottom-line {
