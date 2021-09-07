@@ -1,11 +1,20 @@
 .phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 750px;
     height: 1395px;
     background-color: black;
     border-radius: 5em;
     margin-top: 20px;
-    border: 10px solid black;
+    border: 5px solid black;
     color: white;
+    box-shadow: 15px 3px rgba(189, 54, 54, 0.822);
+}
+
+.dashboard-background {
+    border-radius: 5em;
+    box-shadow: 20px 20px 20px rgba(27, 27, 27);
 }
 
 /* ------------------------------------------------------------------ */
@@ -13,22 +22,26 @@
 /* TOP */
 
 .phone-top {
+    margin: 0 5px 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 270px;
     border-radius: 5em 5em 0 0;
-    background-color: rgba(155, 155, 155, 0.3);
+    border: none;
+    background-image: url('/Users/stephen/Desktop/portfolio/src/data/TopPhoneBG.png');
+    background-size: cover;
+    background-blend-mode: saturation;
 }
 
-.top-across,
+.top-banner,
 .phone-icons {
     display: flex;
     flex-direction: row;
 }
 
 .phone-icons {
-    margin-left: 10px;
+    margin: 5px 0 0 15px;
     display: flex;
     justify-content: space-between;
     width: 85px;
@@ -37,7 +50,7 @@
 
 .phone-time {
     text-align: center;
-    margin-right: 10px;
+    margin: 5px 10px 0 0px;
     width: 85px;
     font-size: 18pt;
 }
@@ -73,6 +86,21 @@
     border-radius: 10em;
 }
 
+.arrow-image-container {
+    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 650px;
+}
+
+.text-back-arrow {
+    color: rgb(47, 127, 255);
+    font-size: 36pt;
+    font-family: monospace;
+}
+
 .dash-name {
     margin-bottom: 10px;
     font-size: 20pt;
@@ -84,16 +112,25 @@
 
 /* MIDDDLE */
 
-.phone-screen {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    height: 930px;
-    background-color: black;
+.power-button {
+    position: static;
+    width: 10px;
+    height: 200px;
+    background-color: rgb(133, 77, 77);
+    margin: -1050px 0px 0px 752px;
     border-radius: 5em;
 }
 
-.text {
+.phone-screen {
+    margin: 0 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 930px;
+    background-color: rgb(233, 233, 233);
+}
+
+.text-box {
     display: flex;
     flex-direction: row;
     margin: 10px;
@@ -112,10 +149,12 @@ li {
 }
 
 .inner-text.left {
-    background-color: rgba(155, 155, 155, 0.3);
+    color: rgb(109, 109, 109);
+    background-color: rgb(185, 185, 185);
 }
 
 .inner-text.right {
+    color: white;
     background-color: rgb(47, 127, 255);
 }
 
@@ -124,7 +163,9 @@ li {
 /* BOTTOM */
 
 .phone-bottom {
+    margin-left: 10px;
+    width: 735px;
     border-radius: 0 0 5em 5em;
     height: 175px;
-    background-color: rgba(155, 155, 155, 0.3);
+    background-image: url('/Users/stephen/Desktop/portfolio/src/data/TopPhoneBG.png');
 }

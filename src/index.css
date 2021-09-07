@@ -12,5 +12,8 @@ html {
 }
 
 body {
+    background: url('https://cdn.wallpapersafari.com/99/27/Tl6MzR.jpg')
+        no-repeat center;
+    background-size: cover;
     overflow: scroll;
 }
