@@ -1,10 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import AnalogClock from 'analog-clock-react';
 import emailjs from 'emailjs-com';
 import './Dashboard.css';
 import me from './../../data/DashboardImage.png';
 import mesh from './../../data/ReceiverMesh.png';
 import blurry from './../../data/TopPhoneBG.png';
+
+const clockStyle = {
+    width: '45px',
+    border: true,
+    marginTop: '25px',
+    borderColor: '#000000',
+    baseColor: '#dddddd ',
+    handColors: {
+        second: '#ff0000',
+        minute: '#000000',
+        hour: '#000000',
+    },
+};
 
 function Dashboard() {
     const [email, setEmail] = useState('');
@@ -48,7 +62,6 @@ function Dashboard() {
             setError(false);
         }
     };
-    console.log(messageClicked);
 
     return (
         <>
@@ -58,7 +71,13 @@ function Dashboard() {
                     {' '}
                     <div className="phone-top">
                         <div className="top-banner">
-                            <div className="phone-time">10:00</div>
+                            <div
+                                style={{
+                                    padding: '5px 30px 5px 5px',
+                                }}
+                            >
+                                <AnalogClock {...clockStyle} />
+                            </div>
                             <div className="top-bumper">
                                 <img
                                     src={mesh}
@@ -67,9 +86,15 @@ function Dashboard() {
                                 <div className="selfie-cam"></div>
                             </div>
                             <div className="phone-icons">
-                                <div className="cell-signal">|||</div>
-                                <div className="wifi-signal">///</div>
-                                <div className="battery-life">---</div>
+                                <div className="icon fir">
+                                    <i class="fas fa-signal"></i>
+                                </div>
+                                <div className="icon mid">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <div className="icon las">
+                                    <i class="fas fa-battery-three-quarters"></i>
+                                </div>
                             </div>
                         </div>
                         <div className="arrow-image-container">
@@ -83,18 +108,30 @@ function Dashboard() {
                         <div className="text-box">
                             {/* row ONE of 'text' */}
                             <div className="inner-text "></div>
-                            <div className="inner-text right one">
-                                <p>Full Stack Software Engineer</p>
+                            <div className="inner-text right t1">
+                                <p>I'm a Full Stack Software Engineer...</p>
                             </div>
                         </div>
                         <div className="text-box">
                             {/* row TWO of 'text'  */}
-                            <div className="inner-text left two">
+                            <div className="inner-text left t2">
                                 <p>
-                                    JavaScript | Python | React | React-Native |
-                                    CSS | HTML | AWS | Redux | Flask | Node.js |
-                                    Express| GraphQL | CSS | RESTful API |
-                                    Unit-Testing | End-to-end Testing
+                                    ...who's a problem solver, I believe in
+                                    empathy first, I’m a strong communicator, a
+                                    self-starter, an insatiable questioner and I
+                                    absolutely love to build stuff!
+                                    <br />
+                                    <br />
+                                    <p>
+                                        Since I started to code in March of
+                                        2020, everyday has been humbling and a
+                                        great learning experience. I never in my
+                                        life thought I would get so much joy out
+                                        of playing with a Python or React
+                                        Library as well as the excitement I get
+                                        from reading about additions into
+                                        JavaScript's es6...
+                                    </p>
                                 </p>
                             </div>
                             <div className="inner-text "></div>
@@ -102,11 +139,21 @@ function Dashboard() {
                         <div className="text-box">
                             {/* row THREE of 'text'  */}
                             <div className="inner-text "></div>
-                            <div className="inner-text right three">
-                                <p>Cleveland, Ohio</p>
+                            <div className="inner-text right t3">
+                                <p>Some tech experience includes -</p>
                             </div>
                         </div>
-
+                        <div className="text-box">
+                            {/* row FOUR of 'text'  */}
+                            <div className="inner-text left t4">
+                                <p>
+                                    Python - JavaScript - React - React-Native -
+                                    SQL - RESTful API - Redux - Flask - Node.js
+                                    - CSS - Express - GraphQL - AWS - HTML{' '}
+                                </p>
+                            </div>
+                            <div className="inner-text "></div>
+                        </div>
                         <form className="contact-box" onSubmit={sendEmail}>
                             <div
                                 className={
@@ -115,7 +162,9 @@ function Dashboard() {
                                         : 'contact '
                                 }
                             >
-                                EMAIL STEPHEN
+                                <div className="one">Send</div>
+                                <div className="two">an</div>
+                                <div className="three">Email</div>
                             </div>
                             <input
                                 className={

@@ -40,6 +40,11 @@
     flex-direction: row;
 }
 
+.icon.fir {
+    z-index: 5;
+    margin-left: -14px;
+}
+
 .phone-icons {
     margin: 5px 0 0 15px;
     display: flex;
@@ -100,7 +105,7 @@
 }
 
 .dash-name {
-    font-size: 36pt;
+    font-size: 32pt;
     color: rgb(41, 41, 41);
 }
 
@@ -130,39 +135,35 @@
 .text-box {
     display: flex;
     flex-direction: row;
-}
-
-p {
-    list-style-type: none;
-    margin: 3px;
-    font-size: 16pt;
+    padding: 10px;
 }
 
 .inner-text {
     border-radius: 2em;
     width: 365px;
     padding: 20px;
+    font-size: 15pt;
 }
 
 .inner-text.left {
     color: rgb(53, 53, 53);
     background-color: rgb(185, 185, 185);
-    margin: 10px 0 10px 25px;
 }
 
 .inner-text.right {
-    margin: 10px 25px 10px 0;
     color: white;
     background-color: rgb(47, 127, 255);
 }
 
-.inner-text.left.two {
-    width: 1200px;
+.t1 {
+    width: 400px;
 }
-
-.inner-text.right.three {
-    width: 230px;
-    margin: 10px 0 380px 100px;
+.t2,
+.t4 {
+    width: 1500px;
+}
+.t3 {
+    width: 350px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -197,10 +198,32 @@ p {
     font-style: italic;
 }
 .contact {
-    font-size: 14pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18pt;
     width: 200px;
     margin: 5px 5px 5px 10px;
     padding: 20px 0 20px 30px;
+}
+
+.one,
+.two,
+.three {
+    border-radius: 5em;
+    color: rgb(70, 70, 70);
+}
+
+.one {
+    background-color: rgba(214, 210, 158, 0.452);
+}
+
+.two {
+    background-color: rgba(203, 156, 211, 0.445);
+}
+
+.three {
+    background-color: rgba(163, 163, 163, 0.281);
 }
 
 .contact.hidden {
