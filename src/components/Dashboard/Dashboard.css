@@ -139,9 +139,9 @@
 }
 
 .inner-text {
-    border-radius: 2em;
+    border-radius: 3em;
     width: 365px;
-    padding: 20px;
+    padding: 0 40px 0 40px;
     font-size: 15pt;
 }
 
@@ -165,6 +165,10 @@
 .t3 {
     width: 350px;
 }
+.t5 {
+    width: 90px;
+    font-size: 18pt;
+}
 
 /* ------------------------------------------------------------------ */
 
@@ -173,7 +177,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 35px;
 }
 
 .email {

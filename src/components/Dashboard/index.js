@@ -154,6 +154,13 @@ function Dashboard() {
                             </div>
                             <div className="inner-text "></div>
                         </div>
+                        <div className="text-box">
+                            {/* row FIVE of 'text'  */}
+                            <div className="inner-text left t5">
+                                <p>...</p>
+                            </div>
+                            <div className="inner-text "></div>
+                        </div>
                         <form className="contact-box" onSubmit={sendEmail}>
                             <div
                                 className={
