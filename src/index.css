@@ -10,13 +10,16 @@ html {
     overflow: visible;
     display: flex;
     justify-content: center;
+    background: url('https://cdn.wallpapersafari.com/99/27/Tl6MzR.jpg')
+        no-repeat;
+    background-size: cover;
 }
-
+/* 
 body {
     background: url('https://cdn.wallpapersafari.com/99/27/Tl6MzR.jpg')
         no-repeat center;
     background-size: cover;
-}
+} */
 
 .home {
     font-size: 50pt;

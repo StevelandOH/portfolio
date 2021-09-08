@@ -286,7 +286,7 @@ p {
 
 .bottom-line {
     position: absolute;
-    margin: 1360px 0 0 270px;
+    /* margin: 1360px 0 0 270px; */
     height: 10px;
     width: 200px;
     background-color: black;
