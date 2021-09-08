@@ -10,6 +10,7 @@ function Dashboard() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState(false);
+    const [messageClicked, setMessageClicked] = useState(false);
 
     const emailInputValidator = () => {
         if (email === '') {
@@ -47,6 +48,7 @@ function Dashboard() {
             setError(false);
         }
     };
+    console.log(messageClicked);
 
     return (
         <>
@@ -106,9 +108,20 @@ function Dashboard() {
                         </div>
 
                         <form className="contact-box" onSubmit={sendEmail}>
+                            <div
+                                className={
+                                    messageClicked
+                                        ? 'contact hidden'
+                                        : 'contact '
+                                }
+                            >
+                                EMAIL STEPHEN
+                            </div>
                             <input
-                                className="email"
-                                placeholder="your email..."
+                                className={
+                                    messageClicked ? 'email' : 'email hidden'
+                                }
+                                placeholder="email"
                                 type="email"
                                 name="user_email"
                                 value={email}
@@ -116,10 +129,13 @@ function Dashboard() {
                             />
                             <input
                                 type="text"
-                                className="message"
-                                placeholder="the message..."
+                                className={
+                                    messageClicked ? 'message' : 'message long'
+                                }
+                                placeholder="the message"
                                 name="message"
                                 value={message}
+                                onClick={() => setMessageClicked(true)}
                                 onChange={(e) => setMessage(e.target.value)}
                             />
                             <button

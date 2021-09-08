@@ -182,21 +182,43 @@ p {
     border-radius: 5em;
     border: 1px solid rgba(174, 174, 174, 0.706);
     font-size: 12pt;
+    outline: none;
+    transition: 1000ms;
+}
+
+.email.hidden {
+    transition: 1000ms;
+    position: absolute;
+    z-index: -1;
 }
 
 .email::placeholder,
 .message::placeholder {
     font-style: italic;
 }
+.contact {
+    font-size: 14pt;
+    width: 200px;
+    margin: 5px 5px 5px 10px;
+    padding: 20px 0 20px 30px;
+}
+
+.contact.hidden {
+    transition: 1000ms;
+    position: absolute;
+    z-index: -1;
+}
 
 .message {
     font-size: 12pt;
+    transition: ease-in-out;
     margin: 5px -50px 5px 5px;
     padding: 20px 0 20px 30px;
     align-items: center;
     width: 500px;
     border-radius: 5em;
     border: 1px solid rgba(174, 174, 174, 0.706);
+    outline: none;
 }
 
 .email-submit {
