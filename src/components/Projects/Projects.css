@@ -1,0 +1,197 @@
+.project-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(213, 220, 226);
+    width: 850px;
+    height: 1300px;
+    margin-top: 40px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* NAVIGATION */
+
+.fake-nav-box {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(173, 173, 136);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav {
+    text-align: center;
+    font-size: 14pt;
+    padding: 5px;
+}
+.nav.i {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    background-color: lavender;
+}
+.nav.search {
+    width: 600px;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
+.nav.login,
+.nav.signup {
+    width: 75px;
+    height: 35px;
+}
+.nav.login {
+    background-color: lightgray;
+}
+.nav.signup {
+    color: white;
+    background-color: blue;
+}
+/* ---------------------------------------------------------------------- */
+/* PROJECTS */
+
+.project-photo-box {
+    height: 200px;
+    width: 80%;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.proj {
+    height: 180px;
+    width: 180px;
+    border: 1px solid black;
+}
+.proj.this {
+}
+.proj.journ {
+}
+.proj.seen {
+}
+
+/* ---------------------------------------------------------------------- */
+/* PROJECT-DROPDOWNS */
+
+.project-dropdown-box {
+}
+.proj-dd {
+}
+.proj-dd.this {
+}
+.proj-dd.journ {
+}
+.proj-dd.seen {
+}
+
+/* ---------------------------------------------------------------------- */
+/* EDUCATION */
+
+.education-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 90%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.edu {
+    height: 80px;
+    width: 45%;
+    border: 1px solid black;
+}
+.edu.app {
+}
+.edu.csu {
+}
+
+/* ---------------------------------------------------------------------- */
+/* WORK EXPERIENCE */
+
+.job {
+    border: 1px solid rgb(175, 178, 182);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+.up-dn-box {
+    border-radius: 5px 0 0 5px;
+    width: 50px;
+    height: 100%;
+    background-color: rgb(247, 248, 249);
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.feed-box {
+    width: 100%;
+    height: 100%;
+}
+.jd {
+    padding-left: 10px;
+    font-size: 15pt;
+}
+.rd-banner {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 8pt;
+}
+.ban-icon {
+    height: 20px;
+    width: 20px;
+    background-color: seagreen;
+    border-radius: 5em;
+}
+.job-title {
+    height: 20px;
+    font-weight: bold;
+}
+.loc-length {
+    height: 20px;
+    width: 400px;
+    color: rgb(163, 167, 172);
+}
+.join {
+    text-align: center;
+    padding: 8px 0 0 0;
+    height: 30px;
+    width: 65px;
+    color: white;
+    background-color: rgba(36, 126, 206, 0.904);
+    border-radius: 25px;
+    margin: 5px 10px 0 0;
+}
+.job.swe {
+    height: 200px;
+    margin-bottom: 20px;
+}
+.job.actor {
+    height: 149px;
+    margin-bottom: 20px;
+}
+
+.job.dog {
+    height: 200px;
+    margin-bottom: 20px;
+}
+.job.barrio {
+    height: 125px;
+    margin-bottom: 20px;
+}
+.job.shooters {
+    height: 140px;
+    margin-bottom: 20px;
+}
