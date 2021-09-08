@@ -3,16 +3,18 @@
     flex-direction: column;
     justify-content: center;
     width: 750px;
-    height: 1395px;
+    height: 1295px;
     background-color: black;
     border-radius: 5em;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     border: 5px solid black;
     color: black;
-    box-shadow: 15px 3px rgba(189, 54, 54, 0.822);
+    box-shadow: 20px 3px rgba(189, 54, 54, 0.822);
 }
 
 .dashboard-background {
+    margin-bottom: 50px;
     border-radius: 5em;
     box-shadow: 20px 20px 20px rgba(27, 27, 27);
 }
@@ -111,7 +113,7 @@
     display: flex;
     flex-direction: column;
     border: none;
-    height: 950px;
+    height: 840px;
     background-color: rgb(233, 233, 233);
 }
 
@@ -120,8 +122,9 @@
     width: 10px;
     height: 200px;
     background-color: rgb(133, 77, 77);
-    margin: -1050px 0px 0px 752px;
+    margin: -1000px 0px 0px 752px;
     border-radius: 5em;
+    border: 1px solid rgba(63, 63, 63, 0.753);
 }
 
 .text-box {
@@ -159,7 +162,7 @@ p {
 
 .inner-text.right.three {
     width: 230px;
-    margin: 10px 0 470px 100px;
+    margin: 10px 0 380px 100px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -173,7 +176,7 @@ p {
 }
 
 .email {
-    margin: 5px;
+    margin: 5px 5px 5px 10px;
     padding: 20px 0 20px 30px;
     width: 200px;
     border-radius: 5em;
@@ -188,7 +191,7 @@ p {
 
 .message {
     font-size: 12pt;
-    margin: 5px;
+    margin: 5px -50px 5px 5px;
     padding: 20px 0 20px 30px;
     align-items: center;
     width: 500px;
@@ -197,11 +200,10 @@ p {
 }
 
 .email-submit {
-    position: absolute;
-    margin: 0 0 0 670px;
+    margin: 0 20px 0 0;
     border-radius: 5em;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     color: white;
     background-color: rgb(17, 192, 17);
     font-size: 24pt;
@@ -285,10 +287,17 @@ p {
 }
 
 .bottom-line {
-    position: absolute;
-    /* margin: 1360px 0 0 270px; */
     height: 10px;
-    width: 200px;
+    width: 300px;
     background-color: black;
     border-radius: 5em;
+}
+
+.bottom-line-space {
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+br {
+    height: 50px;
 }

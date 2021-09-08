@@ -9,27 +9,44 @@ import blurry from './../../data/TopPhoneBG.png';
 function Dashboard() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [error, setError] = useState(false);
 
-    function sendEmail(e) {
+    const emailInputValidator = () => {
+        if (email === '') {
+            setError(true);
+            alert('Need to include an email');
+        }
+        if (message === '') {
+            setError(true);
+            alert('What would you like your message to Stephen be?');
+        }
+    };
+
+    const sendEmail = (e) => {
         e.preventDefault();
-        emailjs
-            .sendForm(
-                'service_hwpthoe',
-                'template_8dskp6b',
-                e.target,
-                'user_RDjCcUt4W1HQqpv05bcaX'
-            )
-            .then(
-                (res) => {
-                    console.log(res);
-                },
-                (err) => {
-                    console.log(err.text);
-                }
-            );
-        setEmail('');
-        setMessage('');
-    }
+        emailInputValidator();
+        if (!error) {
+            emailjs
+                .sendForm(
+                    'service_hwpthoe',
+                    'template_8dskp6b',
+                    e.target,
+                    'user_RDjCcUt4W1HQqpv05bcaX'
+                )
+                .then(
+                    (res) => {
+                        console.log(res);
+                    },
+                    (err) => {
+                        console.log(err.text);
+                    }
+                );
+            setEmail('');
+            setMessage('');
+        } else {
+            setError(false);
+        }
+    };
 
     return (
         <>
@@ -147,8 +164,9 @@ function Dashboard() {
                             <div className="bottom x">tbd</div>
                             <div className="bottom y">tbd</div>
                         </div>
+                        <div className="bottom-line-space"></div>
+                        <div className="bottom-line"></div>
                     </div>
-                    <div className="bottom-line"></div>
                 </div>
             </div>
             <div className="power-button"></div>
