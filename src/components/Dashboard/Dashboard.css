@@ -175,7 +175,7 @@
 /* BOTTOM */
 .contact-box {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
 }
 
@@ -187,46 +187,42 @@
     border: 1px solid rgba(174, 174, 174, 0.706);
     font-size: 12pt;
     outline: none;
-    transition: 1000ms;
+    transition: 500ms;
 }
 
 .email.hidden {
     transition: 1000ms;
     position: absolute;
-    z-index: -1;
+    width: 0;
+    opacity: 0;
 }
 
 .email::placeholder,
 .message::placeholder {
     font-style: italic;
+    color: rgba(214, 218, 220, 0.823);
 }
 .contact {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-size: 18pt;
     width: 200px;
-    margin: 5px 5px 5px 10px;
-    padding: 20px 0 20px 30px;
-}
-
-.one,
-.two,
-.three {
-    border-radius: 5em;
+    margin: 5px 5px 5px 5px;
     color: rgb(70, 70, 70);
+    font-size: 42pt;
 }
 
-.one {
-    background-color: rgba(214, 210, 158, 0.452);
+.fa-hat-wizard {
+    color: rgb(68, 23, 105);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.467);
 }
 
-.two {
-    background-color: rgba(203, 156, 211, 0.445);
-}
-
-.three {
-    background-color: rgba(163, 163, 163, 0.281);
+.fa-envelope {
+    margin-right: 20px;
+    font-size: 42pt;
+    color: ivory;
+    text-shadow: 3px 5px rgba(0, 0, 0, 0.575);
 }
 
 .contact.hidden {
@@ -237,11 +233,11 @@
 
 .message {
     font-size: 12pt;
-    transition: ease-in-out;
+
     margin: 5px -50px 5px 5px;
     padding: 20px 0 20px 30px;
     align-items: center;
-    width: 500px;
+    width: 495px;
     border-radius: 5em;
     border: 1px solid rgba(174, 174, 174, 0.706);
     outline: none;

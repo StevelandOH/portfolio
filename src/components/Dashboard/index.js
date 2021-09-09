@@ -3,9 +3,8 @@ import { NavLink } from 'react-router-dom';
 import AnalogClock from 'analog-clock-react';
 import emailjs from 'emailjs-com';
 import './Dashboard.css';
-import me from './../../data/DashboardImage.png';
-import mesh from './../../data/ReceiverMesh.png';
-import blurry from './../../data/TopPhoneBG.png';
+import me from './../../images/Me.png';
+import mesh from './../../images/Mesh.png';
 
 const clockStyle = {
     width: '45px',
@@ -169,15 +168,14 @@ function Dashboard() {
                                         : 'contact '
                                 }
                             >
-                                <div className="one">Send</div>
-                                <div className="two">an</div>
-                                <div className="three">Email</div>
+                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-hat-wizard"></i>
                             </div>
                             <input
                                 className={
                                     messageClicked ? 'email' : 'email hidden'
                                 }
-                                placeholder="email"
+                                placeholder="EMAIL"
                                 type="email"
                                 name="user_email"
                                 value={email}
@@ -188,7 +186,7 @@ function Dashboard() {
                                 className={
                                     messageClicked ? 'message' : 'message long'
                                 }
-                                placeholder="the message"
+                                placeholder="CONTACT"
                                 name="message"
                                 value={message}
                                 onClick={() => setMessageClicked(true)}
