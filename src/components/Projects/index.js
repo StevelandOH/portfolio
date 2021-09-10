@@ -8,6 +8,10 @@ function Projects() {
     return (
         <>
             <div className="project-page-container">
+                <NavLink to="/" className="back-home">
+                    <i class="fas fa-chevron-left"></i>
+                </NavLink>
+                <div className="margin">back</div>
                 <div className="fake-nav-box">
                     <div className="nav i">
                         <a href="https://postimages.org/" target="_blank">
@@ -35,7 +39,6 @@ function Projects() {
                                 alt="Portfolio"
                             />
                         </a>
-                        hello
                     </div>
                     <div className="proj journ">
                         <a href="https://postimages.org/" target="_blank">
@@ -94,18 +97,39 @@ function Projects() {
                 {jobsArray.map((job) => (
                     <div className={job.class}>
                         <div className="up-dn-box">
-                            <div>^</div>
-                            <div>78.3k</div>
-                            <div>v</div>
+                            <i class="fas fa-chevron-up"></i>
+                            <div className="vote">
+                                {`${
+                                    Math.floor(
+                                        Math.random() * (100 - 10) + 100
+                                    ) / 10
+                                }k`}
+                            </div>
+                            <i class="fas fa-chevron-down"></i>
                         </div>
                         <div className="feed-box">
-                            <div className="rd-banner">
-                                <div className="ban-icon"></div>
-                                <div className="job-title">{job.title}</div>
-                                <div className="loc-length">{job.location}</div>
-                                <div className="join">{job.date}</div>
+                            <div className="split-banner">
+                                <div className="rd-banner">
+                                    <div className="ban-icon"></div>
+                                    <div className="job-title">{job.title}</div>
+                                    <div className="loc-length">
+                                        {job.location}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="join">{job.date}</div>
+                                </div>
                             </div>
                             <p className="jd">{job.jd}</p>
+                            {job.image && (
+                                <div className="job-img">
+                                    <img
+                                        src={job.image}
+                                        border="0"
+                                        alt={job.name}
+                                    ></img>
+                                </div>
+                            )}
                         </div>
                     </div>
                 ))}
@@ -115,3 +139,11 @@ function Projects() {
 }
 
 export default Projects;
+
+<a href="https://postimages.org/" target="_blank">
+    <img
+        src="https://i.postimg.cc/kXrQjP1k/Shooters.png"
+        border="0"
+        alt="Shooters"
+    />
+</a>;

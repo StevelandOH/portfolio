@@ -4,9 +4,28 @@
     align-items: center;
     background-color: rgba(213, 220, 226);
     width: 1150px;
-
+    border: 1px solid rgba(129, 136, 146, 0.4);
     margin-top: 40px;
     border-radius: 10px;
+    color: rgba(129, 136, 146);
+}
+
+.back-home {
+    z-index: 10;
+    font-size: 85pt;
+    width: 100%;
+    position: fixed;
+    margin: 35px 0 0 25px;
+    color: white;
+    height: 155px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.margin {
+    color: white;
+    position: fixed;
+    width: 100%;
+    margin: 160px 0 0 75px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -39,8 +58,8 @@
     text-align: end;
     width: 750px;
     height: 35px;
-    background-color: rgb(246, 247, 248);
-    color: rgb(175, 178, 182);
+    background-color: rgb(231, 234, 237);
+    color: rgb(129, 136, 146);
     border-radius: 5px;
 }
 .nav.login,
@@ -66,8 +85,8 @@
 /* PROJECTS */
 
 .proj-header {
-    width: 860px;
-    margin: 5px 0 3px 0;
+    width: 920px;
+    margin: 5px 0 10px 0;
     font-size: 13pt;
 }
 
@@ -86,12 +105,13 @@
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .proj img {
     border-radius: 10px;
+    margin: 0 8px 0 8px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -118,7 +138,7 @@
     align-items: center;
     height: 60px;
     width: 860px;
-    border: 1px solid rgb(175, 178, 182);
+    border: 1px solid rgba(129, 136, 146, 0.4);
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: white;
@@ -150,22 +170,31 @@
 /* WORK EXPERIENCE */
 
 .job {
-    border: 1px solid rgb(175, 178, 182);
+    border: 1px solid rgba(129, 136, 146, 0.4);
     border-radius: 5px;
     background-color: white;
     display: flex;
     flex-direction: row;
     width: 860px;
     margin-bottom: 20px;
+    padding-bottom: 15px;
 }
 .up-dn-box {
     border-radius: 5px 0 0 5px;
     width: 50px;
-    height: 100%;
     background-color: rgb(247, 248, 249);
     text-align: center;
     font-size: 10pt;
     font-weight: bold;
+    margin-right: 5px;
+}
+.up-dn-box i {
+    font-size: 24pt;
+    margin: 5px;
+    color: silver;
+}
+.vote {
+    color: black;
 }
 .feed-box {
     width: 100%;
@@ -174,15 +203,21 @@
 .jd {
     padding-left: 10px;
     font-size: 15pt;
-    margin: 10px 10px 40px 10px;
+    margin: 10px 10px 10px 10px;
+    color: black;
+}
+.job-img img {
+    margin-left: 20px;
+}
+.split-banner {
+    display: flex;
 }
 .rd-banner {
     height: 40px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
     font-size: 12pt;
 }
 .ban-icon {
@@ -194,8 +229,11 @@
 .job-title {
     height: 20px;
     font-weight: bold;
+    color: black;
+    margin-left: 10px;
 }
 .loc-length {
+    margin-left: 10px;
     height: 20px;
     width: 400px;
     color: rgb(163, 167, 172);
