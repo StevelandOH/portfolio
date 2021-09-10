@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 750px;
+    width: 650px;
     height: 1295px;
     background-color: black;
     border-radius: 5em;
@@ -38,6 +38,8 @@
 .phone-icons {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 650px;
 }
 
 .icon.fir {
@@ -46,39 +48,42 @@
 }
 
 .phone-icons {
-    margin: 5px 0 0 15px;
     display: flex;
-    justify-content: space-between;
-    width: 85px;
-    font-size: 18pt;
+    justify-content: flex-end;
+    width: 75px;
+}
+
+.phone-icons i {
+    margin: 3px;
 }
 
 .phone-time {
     text-align: center;
     margin: 5px 10px 0 0px;
-    width: 85px;
-    font-size: 18pt;
+    font-size: 12pt;
 }
 
 .top-bumper {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     height: 30px;
-    width: 450px;
+    width: 350px;
     background-color: black;
     border-radius: 0 0 10em 10em;
+    margin-right: 10px;
 }
 
 .phone-top img.phone-receiver {
     border-radius: 10em;
-    margin: 8px 20px 0 0;
+    margin: 0 5px 0 45px;
     height: 7px;
-    width: 60px;
+    width: 80px;
 }
 
 .selfie-cam {
     border-radius: 5em;
-    margin: 8px 165px 0 0;
+    margin: 0 0 0 5px;
     background-color: white;
     height: 9px;
     width: 9px;
@@ -95,7 +100,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 650px;
+    width: 550px;
 }
 
 .text-back-arrow {
@@ -127,7 +132,7 @@
     width: 10px;
     height: 200px;
     background-color: rgb(133, 77, 77);
-    margin: -1000px 0px 0px 752px;
+    margin: -1000px 0px 0px 652px;
     border-radius: 5em;
     border: 1px solid rgba(63, 63, 63, 0.753);
 }
@@ -142,7 +147,6 @@
     border-radius: 3em;
     width: 365px;
     padding: 0 40px 0 40px;
-    font-size: 15pt;
 }
 
 .inner-text.left {
@@ -175,8 +179,9 @@
 /* BOTTOM */
 .contact-box {
     display: flex;
-
+    background-color: rgb(233, 233, 233);
     align-items: center;
+    margin: 0 5px 0 5px;
 }
 
 .email {
@@ -270,7 +275,10 @@
     background-image: url('https://i.postimg.cc/4xD8dXX8/Top-Phone-BG.png');
 }
 
-.phone-bottom a {
+.phone-bottom a.p-button,
+.phone-bottom a.r-button,
+.phone-bottom a.x-button,
+.phone-bottom a.y-button {
     display: flex;
     justify-content: center;
     margin: 25px 10px 0 10px;
@@ -278,6 +286,10 @@
     border-radius: 5em 5em 0 0;
     height: 60px;
     width: 135px;
+}
+
+.phone-bottom a {
+    text-decoration: none;
 }
 
 .p-button {

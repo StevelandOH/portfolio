@@ -7,11 +7,11 @@ import me from './../../images/Me.png';
 import mesh from './../../images/Mesh.png';
 
 const clockStyle = {
-    width: '45px',
+    width: '35px',
     border: true,
     marginTop: '25px',
     borderColor: '#000000',
-    baseColor: '#dddddd ',
+    baseColor: '#dddddd',
     handColors: {
         second: '#ff0000',
         minute: '#000000',
@@ -160,47 +160,45 @@ function Dashboard() {
                             </div>
                             <div className="inner-text "></div>
                         </div>
-                        <form className="contact-box" onSubmit={sendEmail}>
-                            <div
-                                className={
-                                    messageClicked
-                                        ? 'contact hidden'
-                                        : 'contact '
-                                }
-                            >
-                                <i class="fas fa-envelope"></i>
-                                <i class="fas fa-hat-wizard"></i>
-                            </div>
-                            <input
-                                className={
-                                    messageClicked ? 'email' : 'email hidden'
-                                }
-                                placeholder="EMAIL"
-                                type="email"
-                                name="user_email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                            <input
-                                type="text"
-                                className={
-                                    messageClicked ? 'message' : 'message long'
-                                }
-                                placeholder="CONTACT"
-                                name="message"
-                                value={message}
-                                onClick={() => setMessageClicked(true)}
-                                onChange={(e) => setMessage(e.target.value)}
-                            />
-                            <button
-                                type="submit"
-                                value="Send"
-                                className="email-submit"
-                            >
-                                S
-                            </button>
-                        </form>
                     </div>
+                    <form className="contact-box" onSubmit={sendEmail}>
+                        <div
+                            className={
+                                messageClicked ? 'contact hidden' : 'contact '
+                            }
+                        >
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-hat-wizard"></i>
+                        </div>
+                        <input
+                            className={
+                                messageClicked ? 'email' : 'email hidden'
+                            }
+                            placeholder="EMAIL"
+                            type="email"
+                            name="user_email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <input
+                            type="text"
+                            className={
+                                messageClicked ? 'message' : 'message long'
+                            }
+                            placeholder="CONTACT"
+                            name="message"
+                            value={message}
+                            onClick={() => setMessageClicked(true)}
+                            onChange={(e) => setMessage(e.target.value)}
+                        />
+                        <button
+                            type="submit"
+                            value="Send"
+                            className="email-submit"
+                        >
+                            S
+                        </button>
+                    </form>
                     <div className="phone-bottom">
                         <div className="big-bottom">
                             <NavLink
@@ -229,10 +227,30 @@ function Dashboard() {
                             </NavLink>
                         </div>
                         <div className="big-bottom">
-                            <div className="bottom p">projects</div>
-                            <div className="bottom r">resume</div>
-                            <div className="bottom x">tbd</div>
-                            <div className="bottom y">tbd</div>
+                            <NavLink
+                                to="/stephensawesomeprojects"
+                                className="bottom p"
+                            >
+                                projects
+                            </NavLink>
+                            <NavLink
+                                to="/stephensawesomeresume"
+                                className="bottom r"
+                            >
+                                resume
+                            </NavLink>
+                            <NavLink
+                                to="/stephensawesomeresume"
+                                className="bottom x"
+                            >
+                                tbd
+                            </NavLink>
+                            <NavLink
+                                to="/stephensawesomeresume"
+                                className="bottom y"
+                            >
+                                tbd
+                            </NavLink>
                         </div>
                         <div className="bottom-line-space"></div>
                         <div className="bottom-line"></div>
