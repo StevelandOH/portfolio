@@ -167,8 +167,8 @@ function Dashboard() {
                                 messageClicked ? 'contact hidden' : 'contact '
                             }
                         >
+                            <div className="here">Contact via</div>
                             <i class="fas fa-envelope"></i>
-                            <i class="fas fa-hat-wizard"></i>
                         </div>
                         <input
                             className={
@@ -185,7 +185,7 @@ function Dashboard() {
                             className={
                                 messageClicked ? 'message' : 'message long'
                             }
-                            placeholder="CONTACT"
+                            placeholder="message here"
                             name="message"
                             value={message}
                             onClick={() => setMessageClicked(true)}
@@ -196,7 +196,7 @@ function Dashboard() {
                             value="Send"
                             className="email-submit"
                         >
-                            S
+                            <i class="fas fa-chevron-right"></i>
                         </button>
                     </form>
                     <div className="phone-bottom">
