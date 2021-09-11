@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     width: 650px;
-    height: 1295px;
+    height: 1175px;
     background-color: black;
     border-radius: 5em;
     margin-top: 40px;
@@ -98,15 +98,28 @@
 .arrow-image-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 550px;
 }
 
+.top-spacer {
+    width: 75px;
+}
+
 .text-back-arrow {
     color: rgb(47, 127, 255);
-    font-size: 36pt;
+    font-size: 56pt;
     font-family: monospace;
+    text-shadow: 1px 1px white;
+    border-radius: 10em;
+}
+
+.text-back-arrow p {
+    margin: -10px 0 0 -5px;
+    color: white;
+    font-size: 8pt;
+    text-shadow: none;
 }
 
 .dash-name {
@@ -123,7 +136,7 @@
     display: flex;
     flex-direction: column;
     border: none;
-    height: 840px;
+    height: 640px;
     background-color: rgb(233, 233, 233);
 }
 
@@ -273,7 +286,7 @@
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 0 0 5em 5em;
-    height: 200px;
+    height: 180px;
     background-image: url('https://i.postimg.cc/4xD8dXX8/Top-Phone-BG.png');
 }
 
@@ -288,60 +301,6 @@
     border-radius: 5em 5em 0 0;
     height: 60px;
     width: 135px;
-}
-
-.phone-bottom a {
-    text-decoration: none;
-    font-size: 12pt;
-    padding-top: 0px;
-}
-
-.p-button {
-    background-color: rgb(184, 231, 173);
-    color: rgb(66, 66, 66);
-    text-decoration: none;
-    font-size: 20pt;
-}
-
-.bottom.p {
-    color: rgb(66, 66, 66);
-    background-color: rgb(184, 231, 173);
-    padding-top: 10px;
-}
-
-.r-button {
-    padding-top: 10px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(54, 99, 168);
-    text-decoration: none;
-}
-
-.bottom.r {
-    color: rgb(54, 99, 168);
-    background-color: rgb(255, 255, 255);
-}
-
-.y-button {
-    padding-top: 10px;
-    text-decoration: none;
-    background-color: rgb(241, 245, 245);
-}
-.x-button {
-    padding-top: 10px;
-    background-color: RGB(24, 22, 22);
-    color: white;
-    text-decoration: none;
-}
-
-.bottom.y {
-    text-align: center;
-    background-color: rgb(241, 245, 245);
-}
-.bottom.x {
-    text-align: center;
-    color: white;
-
-    background-color: RGB(24, 22, 22);
 }
 
 .bottom {

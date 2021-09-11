@@ -169,8 +169,8 @@ function Projects() {
                             <button>
                                 <Link
                                     to="route"
-                                    onClick={(event) => {
-                                        event.preventDefault();
+                                    onClick={(e) => {
+                                        e.preventDefault();
                                         window.open(
                                             'https://pdfhost.io/v/fpaw.QgPh_Stephen_Szelpals_Resume'
                                         );

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import AnalogClock from 'analog-clock-react';
 import emailjs from 'emailjs-com';
 import './Dashboard.css';
@@ -97,9 +97,12 @@ function Dashboard() {
                             </div>
                         </div>
                         <div className="arrow-image-container">
-                            <div className="text-back-arrow">{'<'}</div>
+                            <div className="text-back-arrow">
+                                <i class="fas fa-comments"></i>
+                                <p>design | iMessage</p>
+                            </div>
                             <img className="my-picture" src={me}></img>
-                            <div></div>
+                            <div className="top-spacer"></div>
                         </div>
                         <div className="dash-name">Stephen Szelpal</div>
                     </div>
@@ -201,78 +204,78 @@ function Dashboard() {
                     </form>
                     <div className="phone-bottom">
                         <div className="big-bottom">
-                            <NavLink
-                                className="p-button"
-                                to="/stephensawesomeprojects"
-                            >
-                                mY
+                            <NavLink to="/stephensawesomeprojects">
+                                <img
+                                    style={{
+                                        margin: '20px 0 0 20px',
+                                        borderRadius: '10px',
+                                        height: '95px',
+                                    }}
+                                    src="https://i.postimg.cc/NFFRdz0L/Resume.png"
+                                    border="0"
+                                    alt="Resume"
+                                />
                             </NavLink>
-                            <NavLink
-                                className="r-button"
-                                to="/stephensawesomeresume"
+                            <Link
+                                to="route"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.open(
+                                        'https://www.linkedin.com/in/stephen1010/'
+                                    );
+                                }}
                             >
                                 <img
                                     style={{
+                                        margin: '20px 0 0 20px',
                                         borderRadius: '10px',
-                                        height: '50px',
-                                        marginTop: '10px',
+                                        height: '95px',
                                     }}
                                     src="https://i.postimg.cc/nhGzyL7Q/LinkedIn.png"
                                     border="0"
                                     alt="LinkedIn"
                                 />
-                            </NavLink>
-                            <NavLink
-                                className="x-button"
-                                to="/stephensawesomeresume"
-                            >
-                                <img
-                                    src="https://i.postimg.cc/cJ5Xc0FV/GH.png"
-                                    border="0"
-                                    alt="GH"
-                                />
-                            </NavLink>
-                            <NavLink
-                                className="y-button"
-                                to="/stephensawesomeresume"
+                            </Link>
+                            <Link
+                                to="route"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.open(
+                                        'https://github.com/StevelandOH'
+                                    );
+                                }}
                             >
                                 <img
                                     style={{
+                                        margin: '20px 0 0 20px',
                                         borderRadius: '10px',
-                                        height: '50px',
-                                        marginTop: '10px',
+                                        height: '95px',
                                     }}
-                                    src="https://i.postimg.cc/8CrrqGp8/IG.png"
+                                    src="https://i.postimg.cc/Bv89GqwC/github.png"
+                                    border="0"
+                                    alt="GH"
+                                />
+                            </Link>
+                            <Link
+                                to="route"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.open(
+                                        'https://www.instagram.com/steveland.ohio/'
+                                    );
+                                }}
+                            >
+                                <img
+                                    style={{
+                                        margin: '20px 0 0 20px',
+                                        borderRadius: '10px',
+                                        height: '95px',
+                                    }}
+                                    src="https://i.postimg.cc/HxBLPWJ9/Insta.png"
                                     border="0"
                                     alt="IG"
                                 />
-                            </NavLink>
-                        </div>
-                        <div className="big-bottom">
-                            <NavLink
-                                to="/stephensawesomeprojects"
-                                className="bottom p"
-                            >
-                                RESUME
-                            </NavLink>
-                            <NavLink
-                                to="/stephensawesomeresume"
-                                className="bottom r"
-                            >
-                                LINKEDIN
-                            </NavLink>
-                            <NavLink
-                                to="/stephensawesomeresume"
-                                className="bottom x"
-                            >
-                                GITHUB
-                            </NavLink>
-                            <NavLink
-                                to="/stephensawesomeresume"
-                                className="bottom y"
-                            >
-                                INSTAGRAM
-                            </NavLink>
+                            </Link>
                         </div>
                         <div className="bottom-line-space"></div>
                         <div className="bottom-line"></div>
