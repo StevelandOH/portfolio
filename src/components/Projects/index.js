@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import jobsArray from '../../data/empData';
 
 import './Projects.css';
@@ -134,16 +134,20 @@ function Projects() {
                     </div>
                 ))}
             </div>
+            <Link
+                to="route"
+                onClick={(event) => {
+                    event.preventDefault();
+                    window.open(
+                        'https://pdfhost.io/v/fpaw.QgPh_Stephen_Szelpals_Resume'
+                    );
+                }}
+            >
+                <p>CLICK HERE</p>
+            </Link>
+            <p>for PDF resume</p>
         </>
     );
 }
 
 export default Projects;
-
-<a href="https://postimages.org/" target="_blank">
-    <img
-        src="https://i.postimg.cc/kXrQjP1k/Shooters.png"
-        border="0"
-        alt="Shooters"
-    />
-</a>;
