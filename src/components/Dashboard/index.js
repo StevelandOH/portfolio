@@ -205,25 +205,47 @@ function Dashboard() {
                                 className="p-button"
                                 to="/stephensawesomeprojects"
                             >
-                                P
+                                mY
                             </NavLink>
                             <NavLink
                                 className="r-button"
                                 to="/stephensawesomeresume"
                             >
-                                R
+                                <img
+                                    style={{
+                                        borderRadius: '10px',
+                                        height: '50px',
+                                        marginTop: '10px',
+                                    }}
+                                    src="https://i.postimg.cc/nhGzyL7Q/LinkedIn.png"
+                                    border="0"
+                                    alt="LinkedIn"
+                                />
                             </NavLink>
                             <NavLink
                                 className="x-button"
                                 to="/stephensawesomeresume"
                             >
-                                -
+                                <img
+                                    src="https://i.postimg.cc/cJ5Xc0FV/GH.png"
+                                    border="0"
+                                    alt="GH"
+                                />
                             </NavLink>
                             <NavLink
                                 className="y-button"
                                 to="/stephensawesomeresume"
                             >
-                                -
+                                <img
+                                    style={{
+                                        borderRadius: '10px',
+                                        height: '50px',
+                                        marginTop: '10px',
+                                    }}
+                                    src="https://i.postimg.cc/8CrrqGp8/IG.png"
+                                    border="0"
+                                    alt="IG"
+                                />
                             </NavLink>
                         </div>
                         <div className="big-bottom">
@@ -231,25 +253,25 @@ function Dashboard() {
                                 to="/stephensawesomeprojects"
                                 className="bottom p"
                             >
-                                projects
+                                RESUME
                             </NavLink>
                             <NavLink
                                 to="/stephensawesomeresume"
                                 className="bottom r"
                             >
-                                resume
+                                LINKEDIN
                             </NavLink>
                             <NavLink
                                 to="/stephensawesomeresume"
                                 className="bottom x"
                             >
-                                tbd
+                                GITHUB
                             </NavLink>
                             <NavLink
                                 to="/stephensawesomeresume"
                                 className="bottom y"
                             >
-                                tbd
+                                INSTAGRAM
                             </NavLink>
                         </div>
                         <div className="bottom-line-space"></div>

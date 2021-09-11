@@ -32,40 +32,32 @@ function Projects() {
                 <div className="proj-header">Recent Projects</div>
                 <div className="project-photo-box">
                     <div className="proj this">
-                        <a href="https://postimages.org/" target="_blank">
-                            <img
-                                src="https://i.postimg.cc/Zq47yccW/Portfolio.png"
-                                border="0"
-                                alt="Portfolio"
-                            />
-                        </a>
+                        <img
+                            src="https://i.postimg.cc/Zq47yccW/Portfolio.png"
+                            border="0"
+                            alt="Portfolio"
+                        />
                     </div>
                     <div className="proj journ">
-                        <a href="https://postimages.org/" target="_blank">
-                            <img
-                                src="https://i.postimg.cc/mZ3Mzw0f/Journal.png"
-                                border="0"
-                                alt="Journal"
-                            />
-                        </a>
+                        <img
+                            src="https://i.postimg.cc/mZ3Mzw0f/Journal.png"
+                            border="0"
+                            alt="Journal"
+                        />
                     </div>
                     <div className="proj seen">
-                        <a href="https://postimages.org/" target="_blank">
-                            <img
-                                src="https://i.postimg.cc/fLy8BPXP/Scenes.png"
-                                border="0"
-                                alt="Scenes"
-                            />
-                        </a>
+                        <img
+                            src="https://i.postimg.cc/fLy8BPXP/Scenes.png"
+                            border="0"
+                            alt="Scenes"
+                        />
                     </div>
                     <div className="proj dog">
-                        <a href="https://postimages.org/" target="_blank">
-                            <img
-                                src="https://i.postimg.cc/tgXvw58h/Dogwlkr.png"
-                                border="0"
-                                alt="Dogwlkr"
-                            />
-                        </a>
+                        <img
+                            src="https://i.postimg.cc/tgXvw58h/Dogwlkr.png"
+                            border="0"
+                            alt="Dogwlkr"
+                        />
                     </div>
                 </div>
                 <div className="project-dropdown-box">
@@ -94,58 +86,103 @@ function Projects() {
                         </div>
                     </div>
                 </div>
-                {jobsArray.map((job) => (
-                    <div className={job.class}>
-                        <div className="up-dn-box">
-                            <i class="fas fa-chevron-up"></i>
-                            <div className="vote">
-                                {`${
-                                    Math.floor(
-                                        Math.random() * (100 - 10) + 100
-                                    ) / 10
-                                }k`}
-                            </div>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div className="feed-box">
-                            <div className="split-banner">
-                                <div className="rd-banner">
-                                    <div className="ban-icon"></div>
-                                    <div className="job-title">{job.title}</div>
-                                    <div className="loc-length">
-                                        {job.location}
+                <div className="flex">
+                    <div>
+                        {jobsArray.map((job) => (
+                            <div className={job.class}>
+                                <div className="up-dn-box">
+                                    <i class="fas fa-chevron-up"></i>
+                                    <div className="vote">
+                                        {`${
+                                            Math.floor(
+                                                Math.random() * (100 - 10) + 100
+                                            ) / 10
+                                        }k`}
                                     </div>
+                                    <i class="fas fa-chevron-down"></i>
                                 </div>
-                                <div>
-                                    <div className="join">{job.date}</div>
+                                <div className="feed-box">
+                                    <div className="split-banner">
+                                        <div className="rd-banner">
+                                            <div className="ban-icon"></div>
+                                            <div className="job-title">
+                                                {job.title}
+                                            </div>
+                                            <div className="loc-length">
+                                                {job.location}
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className="join">
+                                                {job.date}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p className="jd">{job.jd}</p>
+                                    {job.image && (
+                                        <div className="job-img">
+                                            <img
+                                                style={
+                                                    job.alt === 'Barrio'
+                                                        ? {
+                                                              width: '250px',
+                                                              height: '250px',
+                                                          }
+                                                        : null
+                                                }
+                                                src={job.image}
+                                                border="0"
+                                                alt={job.name}
+                                            ></img>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
-                            <p className="jd">{job.jd}</p>
-                            {job.image && (
-                                <div className="job-img">
+                        ))}
+                    </div>
+                    <div className="resume-pdf">
+                        <div className="res-top">
+                            <div className="res-icon">
+                                <a
+                                    href="https://postimages.org/"
+                                    target="_blank"
+                                >
                                     <img
-                                        src={job.image}
+                                        style={{
+                                            height: '50px',
+                                            width: '50px',
+                                        }}
+                                        src="https://i.postimg.cc/PPNBVPhw/Resume-Icon.png"
                                         border="0"
-                                        alt={job.name}
-                                    ></img>
-                                </div>
-                            )}
+                                        alt="Resume-Icon"
+                                    />
+                                </a>
+                            </div>
+                            <div className="header-box">
+                                <p className="res-header">Resume PDF</p>
+                            </div>
+                        </div>
+                        <div className="res-lower">
+                            <p>Click the button for a PDF of my resume</p>
+                        </div>
+                        <div className="res-button">
+                            <button>
+                                <Link
+                                    to="route"
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        window.open(
+                                            'https://pdfhost.io/v/fpaw.QgPh_Stephen_Szelpals_Resume'
+                                        );
+                                    }}
+                                >
+                                    <p>Click Here</p>
+                                </Link>
+                            </button>
                         </div>
                     </div>
-                ))}
+                </div>
             </div>
-            <Link
-                to="route"
-                onClick={(event) => {
-                    event.preventDefault();
-                    window.open(
-                        'https://pdfhost.io/v/fpaw.QgPh_Stephen_Szelpals_Resume'
-                    );
-                }}
-            >
-                <p>CLICK HERE</p>
-            </Link>
-            <p>for PDF resume</p>
         </>
     );
 }

@@ -27,7 +27,7 @@ const jobsArray = [
         jd: 'Instantiated a brick and mortar LLC as sole-proprietor and produced an average annual revenue of $90000. Utilized QuickBooks for day to day and negotiated contracts and pricing with distributors and manufacturers as well as consignments for local artists.',
     },
     {
-        name: 'Barrio',
+        alt: 'Barrio',
         image: 'https://i.postimg.cc/4xkJ0BVL/Barrio.png',
         class: 'job barrio',
         title: 'r/ Bartender',
