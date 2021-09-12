@@ -1,0 +1,54 @@
+.big-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.phone-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 0 0 5em 5em;
+    height: 180px;
+    background-image: url('https://i.postimg.cc/4xD8dXX8/Top-Phone-BG.png');
+}
+
+.phone-bottom a.p-button,
+.phone-bottom a.r-button,
+.phone-bottom a.x-button,
+.phone-bottom a.y-button {
+    display: flex;
+    justify-content: center;
+    margin: 25px 10px 0 10px;
+    font-size: 45pt;
+    border-radius: 5em 5em 0 0;
+    height: 60px;
+    width: 135px;
+}
+
+.bottom {
+    margin: 0 10px 0 10px;
+    font-size: 14pt;
+    padding-top: 15px;
+    border-radius: 0 0 5em 5em;
+    text-align: center;
+    height: 60px;
+    width: 135px;
+}
+
+.bottom-line {
+    height: 10px;
+    width: 300px;
+    background-color: black;
+    border-radius: 5em;
+}
+
+.bottom-line-space {
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+br {
+    height: 50px;
+}

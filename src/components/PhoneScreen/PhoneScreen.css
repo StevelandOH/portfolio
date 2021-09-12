@@ -1,0 +1,45 @@
+.phone-screen {
+    margin: 0 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 640px;
+    background-color: rgb(233, 233, 233);
+}
+
+.text-box {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.inner-text {
+    border-radius: 3em;
+    width: 365px;
+    padding: 0 40px 0 40px;
+}
+
+.inner-text.left {
+    color: rgb(53, 53, 53);
+    background-color: rgb(185, 185, 185);
+}
+
+.inner-text.right {
+    color: white;
+    background-color: rgb(47, 127, 255);
+}
+
+.t1 {
+    width: 400px;
+}
+.t2,
+.t4 {
+    width: 1500px;
+}
+.t3 {
+    width: 350px;
+}
+.t5 {
+    width: 90px;
+    font-size: 18pt;
+}

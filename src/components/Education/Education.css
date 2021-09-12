@@ -1,0 +1,35 @@
+.education-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 930px;
+    border: 1px solid rgba(129, 136, 146, 0.4);
+
+    margin: 0 10px 20px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.edu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10pt;
+    height: 60px;
+    width: 475px;
+}
+.edu-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    padding: 5px;
+    border-radius: 3em;
+}
+.edu-text.blue {
+    background-color: rgb(231, 232, 233);
+    color: rgb(52, 119, 204);
+    font-weight: bolder;
+}

@@ -1,0 +1,24 @@
+.phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 650px;
+    height: 1175px;
+    background-color: black;
+    border-radius: 5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 5px solid black;
+    color: black;
+    box-shadow: 20px 3px rgba(189, 54, 54, 0.822);
+}
+
+.power-button {
+    position: static;
+    width: 10px;
+    height: 200px;
+    background-color: rgb(133, 77, 77);
+    margin: -1000px 0px 0px 652px;
+    border-radius: 5em;
+    border: 1px solid rgba(63, 63, 63, 0.753);
+}

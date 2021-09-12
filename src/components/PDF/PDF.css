@@ -1,0 +1,77 @@
+.resume-pdf a {
+    text-decoration: none;
+}
+.resume-pdf {
+    margin: 0 10px 0 675px;
+    height: 400px;
+    width: 260px;
+    border: 1px solid #999292;
+    border-radius: 5px;
+    background-color: white;
+    position: fixed;
+}
+
+.home-btn-box {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    background-color: rgba(234, 64, 45, 0.876);
+}
+
+.home-btn-box a {
+    text-decoration: none;
+    font-size: 24pt;
+    color: white;
+}
+
+.res-top {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.res-top p {
+    text-align: center;
+}
+
+.res-header {
+    font-size: 16pt;
+    margin: 20px 0 10px 0;
+    color: black;
+}
+
+.res-lower {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+.res-icon {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.res-button {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.res-button button {
+    padding: none;
+    width: 100%;
+    border-radius: 100px;
+    background-color: rgba(234, 64, 45, 0.876);
+    border: none;
+}
+
+.res-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 12pt;
+}
