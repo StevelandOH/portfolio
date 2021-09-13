@@ -9,25 +9,20 @@
     justify-content: space-around;
     align-items: center;
 }
-.nav {
-    text-align: center;
-    font-size: 12pt;
-    padding: 10px;
-}
-.nav img {
+
+.r-icon-container img {
+    height: 30px;
     border-radius: 10em;
 }
-.nav.i {
-    margin: 10px;
-    font-size: 20pt;
-}
-.nav.search {
-    text-align: end;
-    width: 750px;
+
+.nav-search {
+    width: 500px;
     height: 35px;
     background-color: rgb(231, 234, 237);
     color: rgb(129, 136, 146);
     border-radius: 5px;
+    margin-right: 50px;
+    padding: 8px;
 }
 .nav.login,
 .nav.signup {
@@ -35,16 +30,17 @@
     justify-content: center;
     align-items: center;
     font-size: 10pt;
-    width: 100px;
+    width: 75px;
     height: 30px;
     border-radius: 20px;
 }
 .nav.login {
     background-color: white;
-    color: rgb(52, 119, 204);
+    color: #3477cc;
     border: 1px solid rgb(52, 119, 204);
 }
 .nav.signup {
+    margin-left: -45px;
     color: white;
     background-color: rgb(52, 119, 204);
 }
