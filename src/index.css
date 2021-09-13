@@ -5,7 +5,7 @@
 
 body,
 html {
-    height: 1800px;
+    height: 1740px;
     width: 100vw;
     overflow: visible;
     display: flex;
@@ -13,10 +13,4 @@ html {
     background: url('https://cdn.wallpapersafari.com/99/27/Tl6MzR.jpg')
         no-repeat;
     background-size: cover;
-}
-
-.home {
-    font-size: 50pt;
-    color: white;
-    margin-top: 200px;
 }

@@ -6,7 +6,10 @@ function PhoneBottom() {
     return (
         <div className="phone-bottom">
             <div className="big-bottom">
-                <NavLink to="/stephensawesomeresume">
+                <NavLink
+                    to="/stephensawesomeresume"
+                    onClick={() => window.scrollTo(0, 0)}
+                >
                     <img
                         style={{
                             margin: '20px 0 0 20px',

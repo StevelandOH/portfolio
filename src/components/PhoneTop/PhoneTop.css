@@ -3,70 +3,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 270px;
-    border-radius: 5em 5em 0 0;
+    height: 355px;
+    border-radius: 60px 60px 0 0;
     border: none;
     background-image: url('https://i.postimg.cc/4xD8dXX8/Top-Phone-BG.png');
 }
 
-.top-banner,
-.phone-icons {
+.top-banner {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 650px;
-}
-
-.icon.fir {
-    z-index: 5;
-    margin-left: -14px;
 }
 
 .phone-icons {
+    margin-top: 10px;
+    width: 150px;
     display: flex;
-    justify-content: flex-end;
-    width: 75px;
+    justify-content: space-around;
+    font-size: 18pt;
 }
 
 .phone-icons i {
-    margin: 3px;
-}
-
-.phone-time {
-    text-align: center;
-    margin: 5px 10px 0 0px;
-    font-size: 12pt;
+    margin-left: 10px;
 }
 
 .top-bumper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    width: 350px;
+    height: 40px;
+    width: 550px;
     background-color: black;
     border-radius: 0 0 10em 10em;
-    margin-right: 10px;
 }
 
 img.phone-receiver {
     border-radius: 10em;
-    margin: 0 5px 0 45px;
-    height: 7px;
-    width: 80px;
+    height: 10px;
+    width: 200px;
+    margin-left: 40px;
 }
 
 .selfie-cam {
     border-radius: 5em;
-    margin: 0 0 0 5px;
+    margin: 10px;
     background-color: white;
-    height: 9px;
-    width: 9px;
+    height: 15px;
+    width: 15px;
     background-color: rgb(124, 14, 14);
 }
 
 img.my-picture {
-    height: 160px;
+    height: 225px;
     border-radius: 10em;
 }
 
@@ -75,7 +64,7 @@ img.my-picture {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 550px;
+    width: 100%;
 }
 
 .top-spacer {
@@ -98,6 +87,6 @@ img.my-picture {
 }
 
 .dash-name {
-    font-size: 32pt;
+    font-size: 42pt;
     color: rgb(41, 41, 41);
 }

@@ -4,11 +4,11 @@
     align-items: center;
     background-color: rgba(213, 220, 226);
     width: 950px;
+    height: 1700px;
     border: 1px solid rgba(129, 136, 146, 0.4);
-    margin-top: 40px;
-
+    margin-top: 20px;
     border-radius: 10px;
-    color: rgba(129, 136, 146);
+    color: #818892;
 }
 
 .back-home {
@@ -29,117 +29,8 @@
     margin: 160px 0 0 -87%;
 }
 
-/* ---------------------------------------------------------------------- */
-/* NAVIGATION */
-
-/* ---------------------------------------------------------------------- */
-/* PROJECTS */
-
-/* ---------------------------------------------------------------------- */
-/* PROJECT-DROPDOWNS */
-
-.project-dropdown-box {
-}
-.proj-dd {
-}
-.proj-dd.this {
-}
-.proj-dd.journ {
-}
-.proj-dd.seen {
-}
-
-/* ---------------------------------------------------------------------- */
-/* EDUCATION */
-
-/* ---------------------------------------------------------------------- */
-/* WORK EXPERIENCE */
-
 .flex {
     display: flex;
     flex-direction: row;
     width: 950px;
-}
-
-.job {
-    border: 1px solid rgba(129, 136, 146, 0.4);
-    border-radius: 5px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    width: 650px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    padding-bottom: 15px;
-}
-.up-dn-box {
-    border-radius: 5px 0 0 5px;
-    width: 50px;
-    background-color: rgb(247, 248, 249);
-    text-align: center;
-    font-size: 10pt;
-    font-weight: bold;
-    margin-right: 5px;
-}
-.up-dn-box i {
-    font-size: 24pt;
-    margin: 5px;
-    color: silver;
-}
-.vote {
-    color: black;
-}
-.feed-box {
-    width: 100%;
-    height: 100%;
-}
-.jd {
-    padding-left: 10px;
-    font-size: 15pt;
-    margin: 10px 10px 10px 10px;
-    color: black;
-}
-.job-img img {
-    margin-left: 20px;
-}
-.split-banner {
-    display: flex;
-}
-.rd-banner {
-    height: 40px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    font-size: 12pt;
-}
-.ban-icon {
-    height: 20px;
-    width: 20px;
-    background-color: seagreen;
-    border-radius: 5em;
-}
-.job-title {
-    height: 20px;
-    font-weight: bold;
-    color: black;
-    margin-left: 10px;
-}
-.loc-length {
-    margin-left: 10px;
-    height: 20px;
-
-    color: rgb(163, 167, 172);
-}
-.join {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 30px;
-    width: 100px;
-    color: white;
-    background-color: rgba(36, 126, 206, 0.904);
-    border-radius: 25px;
-    margin: 5px 10px 0 0;
 }

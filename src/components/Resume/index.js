@@ -1,11 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Education from '../Education';
 import Projects from '../Projects';
 import FakeNav from '../FakeNav';
 import PDF from '../PDF';
 import WorkHistory from '../WorkHistory';
-
 import jobsArray from '../../data/empData';
 import './Resume.css';
 
@@ -29,7 +27,18 @@ function Resume() {
                             <WorkHistory job={job} />
                         ))}
                     </div>
-                    <PDF />
+                    <div
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                        }}
+                    >
+                        <PDF />
+                        <div className="bottom-pdf">
+                            <PDF />
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

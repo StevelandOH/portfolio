@@ -23,7 +23,10 @@ function PhoneTop() {
             <div className="top-banner">
                 <div
                     style={{
+                        display: 'flex',
+                        justifyContent: 'center',
                         padding: '5px 30px 5px 5px',
+                        width: '150px',
                     }}
                 >
                     <AnalogClock {...clockStyle} />

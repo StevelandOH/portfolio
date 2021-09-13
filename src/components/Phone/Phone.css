@@ -2,23 +2,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 650px;
-    height: 1175px;
+    width: 950px;
+    height: 1700px;
     background-color: black;
     border-radius: 5em;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border: 5px solid black;
     color: black;
-    box-shadow: 20px 3px rgba(189, 54, 54, 0.822);
+    box-shadow: 20px 3px rgba(189, 54, 54, 0.622);
 }
 
 .power-button {
     position: static;
     width: 10px;
-    height: 200px;
+    height: 300px;
     background-color: rgb(133, 77, 77);
-    margin: -1000px 0px 0px 652px;
+    margin: -1300px 0 0 955px;
     border-radius: 5em;
     border: 1px solid rgba(63, 63, 63, 0.753);
 }

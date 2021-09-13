@@ -6,9 +6,10 @@ function PDF() {
     return (
         <div className="resume-pdf">
             <NavLink
+                onClick={() => window.scrollTo(0, 0)}
                 to="/"
                 className="home-btn-box"
-                style={{ borderBottom: '5px solid #999292' }}
+                style={{ borderBottom: '3px solid #81892' }}
             >
                 <NavLink to="/">
                     <i class="fas fa-chevron-left"></i>

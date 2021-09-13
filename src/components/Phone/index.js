@@ -52,7 +52,8 @@ function Phone() {
     return (
         <div
             style={{
-                marginBottom: '50px',
+                height: '1700px',
+                width: '950px',
                 borderRadius: '5em',
                 boxShadow: '20px 20px 20px #1b1b1b',
             }}
