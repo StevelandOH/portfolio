@@ -5,7 +5,7 @@ import mesh from './../../images/Mesh.png';
 import './PhoneTop.css';
 
 const clockStyle = {
-    width: '35px',
+    width: '45px',
     border: true,
     marginTop: '25px',
     borderColor: '#000000',
