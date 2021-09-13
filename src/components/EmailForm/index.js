@@ -34,7 +34,7 @@ function EmailForm({
                 onChange={(e) => setMessage(e.target.value)}
             />
             <button type="submit" value="Send" className="email-submit">
-                <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-arrow-up"></i>
             </button>
         </form>
     );
