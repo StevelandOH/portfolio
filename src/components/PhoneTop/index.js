@@ -50,10 +50,7 @@ function PhoneTop() {
                 </div>
             </div>
             <div className="arrow-image-container">
-                <div className="text-back-arrow">
-                    <i class="fas fa-comments"></i>
-                    <p>design | iMessage</p>
-                </div>
+                <div className="top-spacer"></div>
                 <img className="my-picture" src={me}></img>
                 <div className="top-spacer"></div>
             </div>
