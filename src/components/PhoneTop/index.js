@@ -10,6 +10,8 @@ const clockStyle = {
     marginTop: '25px',
     borderColor: '#000000',
     baseColor: '#dddddd',
+    centerColor: 'none',
+    centerBorderColor: 'none',
     handColors: {
         second: '#ff0000',
         minute: '#000000',
