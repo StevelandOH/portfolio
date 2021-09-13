@@ -33,7 +33,7 @@
 .jd {
     padding-left: 10px;
     font-size: 15pt;
-    margin: 10px 10px 10px 10px;
+    margin-top: 5px;
     color: black;
 }
 .job-img img {
@@ -43,6 +43,7 @@
     display: flex;
 }
 .rd-banner {
+    margin-top: -10px;
     height: 40px;
     width: 100%;
     display: flex;
@@ -74,7 +75,7 @@
     align-items: center;
     text-align: center;
     height: 30px;
-    width: 100px;
+    width: 80px;
     color: white;
     background-color: rgba(36, 126, 206, 0.904);
     border-radius: 25px;

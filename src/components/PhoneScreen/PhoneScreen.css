@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     border: none;
-    height: 1050px;
+    height: 990px;
     background-color: rgb(233, 233, 233);
 }
 
@@ -16,7 +16,7 @@
 }
 
 .inner-text {
-    font-size: 20pt;
+    font-size: 16pt;
     border-radius: 3em;
     padding: 5px 35px 5px 35px;
 }
@@ -32,14 +32,19 @@
 }
 
 .t1 {
-    width: 550px;
+    margin-top: 15px;
+    width: 450px;
 }
-.t2,
-.t4 {
+.t2 {
     width: 700px;
 }
 .t3 {
-    width: 350px;
+    width: 400px;
+    font-weight: bold;
+}
+.t4 {
+    width: 720px;
+    border: 3px solid rgb(47, 127, 255);
 }
 .t5 {
     width: 120px;

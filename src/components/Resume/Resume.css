@@ -9,6 +9,11 @@
     margin-top: 20px;
     border-radius: 10px;
     color: #818892;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.proj-header {
+    color: gray;
 }
 
 .back-home {

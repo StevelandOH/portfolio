@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 355px;
-    border-radius: 60px 60px 0 0;
+
+    border-radius: 70px 70px 0 0;
     border: none;
     background-image: url('https://i.postimg.cc/4xD8dXX8/Top-Phone-BG.png');
     background-repeat: no-repeat;
@@ -89,6 +89,7 @@ img.my-picture {
 }
 
 .dash-name {
-    font-size: 42pt;
+    font-size: 32pt;
     color: rgb(41, 41, 41);
+    margin-bottom: 5px;
 }

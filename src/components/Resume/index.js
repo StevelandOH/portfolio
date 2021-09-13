@@ -19,7 +19,7 @@ function Resume() {
                     <div className="proj-dd journ"></div>
                     <div className="proj-dd seen"></div>
                 </div>
-                <div className="proj-header exp">Education and Experience</div>
+                <div className="proj-header">Education and Experience</div>
                 <Education />
                 <div className="flex">
                     <div>

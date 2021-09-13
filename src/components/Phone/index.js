@@ -52,7 +52,7 @@ function Phone() {
     return (
         <div
             style={{
-                height: '1700px',
+                height: '1680px',
                 width: '950px',
                 borderRadius: '5em',
                 boxShadow: '20px 20px 20px #1b1b1b',

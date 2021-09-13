@@ -1,9 +1,10 @@
 .phone {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 950px;
-    height: 1700px;
+    height: 1680px;
     background-color: black;
     border-radius: 5em;
     margin-top: 20px;

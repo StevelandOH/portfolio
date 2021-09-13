@@ -21,8 +21,6 @@ function PhoneScreen() {
                         I’m a strong communicator, a self-starter, an insatiable
                         questioner and I absolutely love to build stuff!
                     </p>
-                    <br />
-
                     <p>
                         Since I started to code in March of 2020, everyday has
                         been both humbling, and immensely fulfilling. I never in
@@ -38,16 +36,27 @@ function PhoneScreen() {
                 {/* row THREE of 'text'  */}
                 <div className="inner-text "></div>
                 <div className="inner-text right t3">
-                    <p>TECHNOLOGIES 😎</p>
+                    <p>
+                        <i class="fas fa-chevron-down"></i>{' '}
+                        <i class="fas fa-chevron-down"></i>{' '}
+                        <i class="fas fa-chevron-down"></i> Technologies 😎{' '}
+                        <i class="fas fa-chevron-down"></i>{' '}
+                        <i class="fas fa-chevron-down"></i>{' '}
+                        <i class="fas fa-chevron-down"></i>
+                    </p>
                 </div>
             </div>
             <div className="text-box">
                 {/* row FOUR of 'text'  */}
                 <div className="inner-text left t4">
                     <p>
-                        Python - JavaScript - React - React-Native - SQL -
-                        RESTful API - Redux - Flask - Node.js - CSS - Express -
-                        GraphQL - AWS - HTML{' '}
+                        Python | JavaScript | SQL | React | Redux | Node.js |
+                        AWS
+                    </p>
+
+                    <p>
+                        Express | GraphQL | Flask | HTML | React-Native | CSS |
+                        REST API
                     </p>
                 </div>
                 <div className="inner-text "></div>

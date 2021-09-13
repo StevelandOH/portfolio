@@ -18,11 +18,11 @@ function WorkHistory({ job }) {
                         <div className="job-title">{job.title}</div>
                         <div className="loc-length">{job.location}</div>
                     </div>
-                    <div>
+                    <div style={{ fontSize: '9pt' }}>
                         <div className="join">{job.date}</div>
                     </div>
                 </div>
-                <p className="jd">{job.jd}</p>
+                <div className="jd">{job.jd}</div>
                 {job.image && (
                     <div className="job-img">
                         <img
