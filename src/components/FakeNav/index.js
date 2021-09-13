@@ -20,7 +20,10 @@ function FakeNav() {
             <div className="nav signup">Reddit</div>
             <div style={{ marginLeft: '-20px' }}>
                 <i style={{ fontSize: '14pt' }} class="far fa-user"></i>
-                <i style={{ fontSize: '10pt' }} class="fas fa-chevron-down"></i>
+                <i
+                    style={{ fontSize: '10pt', marginLeft: '5px' }}
+                    class="fas fa-chevron-down"
+                ></i>
             </div>
         </div>
     );
