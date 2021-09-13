@@ -12,12 +12,12 @@ function EmailForm({
 }) {
     return (
         <form className="contact-box" onSubmit={sendEmail}>
-            <div className={messageClicked ? 'contact hidden' : 'contact '}>
-                <div className="here">Contact via</div>
+            <div className="contact">
                 <i class="fas fa-envelope"></i>
+                <div>CONTACT</div>
             </div>
             <input
-                className={messageClicked ? 'email' : 'email hidden'}
+                className="email"
                 placeholder="EMAIL"
                 type="email"
                 name="user_email"
@@ -26,8 +26,8 @@ function EmailForm({
             />
             <input
                 type="text"
-                className={messageClicked ? 'message' : 'message long'}
-                placeholder="message here"
+                className="message"
+                placeholder="MESSAGE"
                 name="message"
                 value={message}
                 onClick={() => setMessageClicked(true)}
