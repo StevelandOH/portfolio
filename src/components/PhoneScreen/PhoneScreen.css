@@ -10,13 +10,15 @@
 .text-box {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    justify-content: space-between;
+    width: 900px;
+    margin: 20px 20px 0px 20px;
 }
 
 .inner-text {
+    font-size: 20pt;
     border-radius: 3em;
-    width: 365px;
-    padding: 0 40px 0 40px;
+    padding: 5px 35px 5px 35px;
 }
 
 .inner-text.left {
@@ -30,16 +32,18 @@
 }
 
 .t1 {
-    width: 400px;
+    width: 550px;
 }
 .t2,
 .t4 {
-    width: 1500px;
+    width: 700px;
 }
 .t3 {
     width: 350px;
 }
 .t5 {
-    width: 90px;
-    font-size: 18pt;
+    width: 120px;
+    height: 100px;
+    font-size: 28pt;
+    text-align: center;
 }

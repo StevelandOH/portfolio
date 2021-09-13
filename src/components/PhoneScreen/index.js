@@ -8,7 +8,9 @@ function PhoneScreen() {
                 {/* row ONE of 'text' */}
                 <div className="inner-text "></div>
                 <div className="inner-text right t1">
-                    <p>I'm a Full Stack Software Engineer...</p>
+                    <p style={{ fontWeight: 'bolder' }}>
+                        I'm a Full Stack Software Engineer...
+                    </p>
                 </div>
             </div>
             <div className="text-box">
@@ -18,16 +20,16 @@ function PhoneScreen() {
                         ...who's a problem solver, I believe in empathy first,
                         I’m a strong communicator, a self-starter, an insatiable
                         questioner and I absolutely love to build stuff!
-                        <br />
-                        <br />
-                        <p>
-                            Since I started to code in March of 2020, everyday
-                            has been humbling and a great learning experience. I
-                            never in my life thought I would get so much joy out
-                            of playing with a Python or React Library as well as
-                            the excitement I get from reading about additions
-                            into JavaScript's es6...
-                        </p>
+                    </p>
+                    <br />
+
+                    <p>
+                        Since I started to code in March of 2020, everyday has
+                        been both humbling, and immensely fulfilling. I never in
+                        my life thought I would get so much joy out of playing
+                        with a Python or React Library as well as the excitement
+                        I get from reading about additions into JavaScript's
+                        es6...
                     </p>
                 </div>
                 <div className="inner-text "></div>
@@ -36,7 +38,7 @@ function PhoneScreen() {
                 {/* row THREE of 'text'  */}
                 <div className="inner-text "></div>
                 <div className="inner-text right t3">
-                    <p>Some tech experience includes -</p>
+                    <p>TECHNOLOGIES 😎</p>
                 </div>
             </div>
             <div className="text-box">
