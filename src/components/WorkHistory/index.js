@@ -5,11 +5,11 @@ function WorkHistory({ job }) {
     return (
         <div className={job.class}>
             <div className="up-dn-box">
-                <i class="fas fa-chevron-up"></i>
+                <i className="fas fa-chevron-up"></i>
                 <div className="vote">
                     {`${Math.floor(Math.random() * (100 - 10) + 100) / 10}k`}
                 </div>
-                <i class="fas fa-chevron-down"></i>
+                <i className="fas fa-chevron-down"></i>
             </div>
             <div className="feed-box">
                 <div className="split-banner">

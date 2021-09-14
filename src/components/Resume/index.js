@@ -23,8 +23,10 @@ function Resume() {
                 <Education />
                 <div className="flex">
                     <div>
-                        {jobsArray.map((job) => (
-                            <WorkHistory job={job} />
+                        {jobsArray.map((job, i) => (
+                            <div key={i}>
+                                <WorkHistory job={job} />
+                            </div>
                         ))}
                     </div>
                     <div

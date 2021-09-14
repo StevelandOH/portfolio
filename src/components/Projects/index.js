@@ -1,47 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import projData from '../../data/projects';
 import './Projects.css';
-
-const data = [
-    {
-        className: 'proj this',
-        src: 'https://i.postimg.cc/Zq47yccW/Portfolio.png',
-        git: 'https://github.com/StevelandOH/portfolio',
-        live: 'http://www.stephenthedev.com/',
-        alt: 'Portfolio Site',
-        tech: 'ReactJS | CSS',
-    },
-    {
-        className: 'proj journ',
-        src: 'https://i.postimg.cc/mZ3Mzw0f/Journal.png',
-        git: 'https://github.com/StevelandOH/journal-easy',
-        live: 'https://journal-easy.herokuapp.com/',
-        alt: 'Journal Easy',
-        tech: 'Python | ReactJS | SQL | Flask | CSS',
-    },
-    {
-        className: 'proj seen',
-        src: 'https://i.postimg.cc/fLy8BPXP/Scenes.png',
-        git: 'https://github.com/StevelandOH/seen-scenes',
-        live: 'https://seen-scenes-app.herokuapp.com/',
-        alt: 'Seen Scenes',
-        tech: 'JavaScript | CSS | PugJS',
-    },
-    {
-        className: 'proj dog',
-        src: 'https://i.postimg.cc/tgXvw58h/Dogwlkr.png',
-        git: 'https://github.com/StevelandOH/dogwlkr',
-        live: 'https://dogwlkr.herokuapp.com/',
-        alt: 'Dogwlkr',
-        tech: 'ReactJS | JavaScript | Express | SQL | CSS',
-    },
-];
 
 function Projects() {
     return (
         <div className="project-photo-box">
-            {data.map((proj) => (
-                <div className={proj.className}>
+            {projData.map((proj, i) => (
+                <div key={i} className={proj.className}>
                     <div
                         style={{
                             backgroundColor: 'black',
@@ -69,7 +35,7 @@ function Projects() {
                                         marginLeft: '5px',
                                         fontSize: '8pt',
                                     }}
-                                    class="fas fa-chevron-right"
+                                    className="fas fa-chevron-right"
                                 ></i>
                             </Link>
                         </div>
@@ -87,7 +53,7 @@ function Projects() {
                                         marginLeft: '5px',
                                         fontSize: '8pt',
                                     }}
-                                    class="fas fa-chevron-right"
+                                    className="fas fa-chevron-right"
                                 ></i>
                             </Link>
                         </div>

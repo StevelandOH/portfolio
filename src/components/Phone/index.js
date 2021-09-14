@@ -10,7 +10,6 @@ function Phone() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState(false);
-    const [messageClicked, setMessageClicked] = useState(false);
 
     const emailInputValidator = () => {
         if (email === '') {
@@ -64,11 +63,9 @@ function Phone() {
                 <PhoneScreen />
                 <EmailForm
                     sendEmail={sendEmail}
-                    messageClicked={messageClicked}
                     email={email}
                     message={message}
                     setEmail={setEmail}
-                    setMessageClicked={setMessageClicked}
                     setMessage={setMessage}
                 />
                 <PhoneBottom />

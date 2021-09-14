@@ -11,11 +11,12 @@ function PDF() {
                 className="home-btn-box"
                 style={{ borderBottom: '3px solid #81892' }}
             >
-                <NavLink to="/">
-                    <i class="fas fa-chevron-left"></i>
-                </NavLink>
-                <NavLink
-                    to="/"
+                <i
+                    style={{ fontSize: '24pt', color: 'white' }}
+                    className="fas fa-chevron-left"
+                ></i>
+
+                <div
                     style={{
                         fontSize: '14pt',
                         fontWeight: 'bolder',
@@ -24,11 +25,11 @@ function PDF() {
                     }}
                 >
                     Back to Homepage
-                </NavLink>
+                </div>
             </NavLink>
             <div className="res-top">
                 <div className="res-icon">
-                    <a href="https://postimages.org/" target="_blank">
+                    <a href="https://postimages.org/">
                         <img
                             style={{
                                 height: '50px',

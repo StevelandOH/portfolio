@@ -5,7 +5,10 @@ function Loader() {
     return (
         <div className="loader">
             <div className="half-loader">
-                <i style={{ fontSize: '50pt' }} class="far fa-snowflake"></i>
+                <i
+                    style={{ fontSize: '50pt' }}
+                    className="far fa-snowflake"
+                ></i>
             </div>
         </div>
     );

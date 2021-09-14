@@ -1,19 +1,11 @@
 import React from 'react';
 import './EmailForm.css';
 
-function EmailForm({
-    sendEmail,
-    messageClicked,
-    email,
-    message,
-    setEmail,
-    setMessageClicked,
-    setMessage,
-}) {
+function EmailForm({ sendEmail, email, message, setEmail, setMessage }) {
     return (
         <form className="contact-box" onSubmit={sendEmail}>
             <div className="contact">
-                <i class="fas fa-envelope"></i>
+                <i className="fas fa-envelope"></i>
                 <div>CONTACT</div>
             </div>
             <input
@@ -30,11 +22,10 @@ function EmailForm({
                 placeholder="MESSAGE"
                 name="message"
                 value={message}
-                onClick={() => setMessageClicked(true)}
                 onChange={(e) => setMessage(e.target.value)}
             />
             <button type="submit" value="Send" className="email-submit">
-                <i class="fas fa-arrow-up"></i>
+                <i className="fas fa-arrow-up"></i>
             </button>
         </form>
     );
