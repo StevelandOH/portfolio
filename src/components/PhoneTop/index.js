@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AnalogClock from 'analog-clock-react';
 import me from './../../images/Me.png';
 import mesh from './../../images/Mesh.png';
+import background from './../../images/Barrio.png';
 import './PhoneTop.css';
 
 const clockStyle = {

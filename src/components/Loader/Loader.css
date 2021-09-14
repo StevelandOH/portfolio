@@ -1,0 +1,21 @@
+.loader {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-loader {
+    color: rgba(255, 255, 255, 0.541);
+    animation: spin 2s linear 0s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

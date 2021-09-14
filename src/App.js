@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Resume from './components/Resume';
 import Phone from './components/Phone';
+import Loader from './components/Loader';
 
 function App() {
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoaded(true);
+        }, 1700);
+    }, []);
+
     return (
         <>
             <Switch>
                 <Route exact path="/">
-                    <Phone />
+                    {loaded ? <Phone /> : <Loader />}
                 </Route>
                 <Route path="/StephensAwesomeResume">
                     <Resume />
